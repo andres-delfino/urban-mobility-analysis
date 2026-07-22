@@ -56,3 +56,32 @@ This project integrates two primary data sources to evaluate the relationship be
 | `Unemployment %` | Float | Unemployment rate among the economically active population (%) |
 | `PM2.5 (μg/m³)` | Float | Annual average fine particulate matter concentration (Air Quality Index) |
 | `Population (M)` | Float | Total metropolitan population (Millions) |
+
+---
+
+### Methodology
+- **Data Cleaning and Validation:** Standardized column names and converted data types (including dates and numerical values) across datasets to enable seamless joins and accurate calculations, while filtering records by year to isolate the most recent and relevant data.
+- **Exploratory Data Analysis & Merging:** Calculated traffic averages by city, country, and year, then merged the traffic and economic datasets into a unified, city-level dataset for integrated analysis.
+- **Data Visualization:** Generated scatter plots and visual distributions using Python's Seaborn and Matplotlib libraries to explore underlying patterns and correlations between traffic metrics and economic performance.
+
+### Insights & Key Findings 
+
+#### 1. Economic & Mobility Decoupling
+> **Macro-Level Insight:** No direct correlation was found between GDP per capita and traffic congestion. Cities with similar economic outputs exhibit vastly different traffic profiles, demonstrating that financial growth does not inherently dictate congestion levels.
+
+#### 2. Regional Traffic Disparities & Economic Benchmarks
+* **Highest Congestion Hub:** **Mexico City** registered the highest average traffic delay times across all evaluated metropolitan regions.
+* **Comparative Discrepancies:** **Montevideo** achieved the highest GDP per capita while maintaining remarkably low congestion. Similarly, **Porto Alegre** and **Recife** share nearly identical traffic levels despite Porto Alegre’s higher GDP, while **Rio de Janeiro** manages far lower congestion than **Lima** at comparable GDP levels.
+
+#### 3. Anomaly & Outlier Identification
+* **Data Skewing:** Uncovered extreme outliers within the dataset that skewed macro-level trendlines, highlighting the need for isolated local variables in future urban planning models
+
+### Strategic Recommendations
+
+#### 1. Data Source Validation & Re-Analysis
+Given the presence of extreme outliers, cross-validate raw data sources and data collection protocols before secondary analysis. Refining dataset integrity will provide clearer, unskewed visibility into potential relationships between congestion and economic productivity.
+
+#### 2. Targeted Infrastructure Investment
+* **Priority Zone:** **Santiago** presents relatively high congestion alongside the lowest economic productivity in the dataset.
+* **Investment Hypothesis:** If leadership operates on the premise that mitigating traffic friction directly unlocks economic output—despite current cross-city ambiguity—Santiago represents the primary candidate for high-impact infrastructure investment.
+* **Prerequisite:** Final capital allocation should remain strictly contingent on deeper diagnostic modeling following data source validation.
