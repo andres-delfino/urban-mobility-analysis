@@ -64,6 +64,9 @@ This project integrates two primary data sources to evaluate the relationship be
 - **Exploratory Data Analysis & Merging:** Calculated traffic averages by city, country, and year, then merged the traffic and economic datasets into a unified, city-level dataset for integrated analysis.
 - **Data Visualization:** Generated scatter plots and visual distributions using Python's Seaborn and Matplotlib libraries to explore underlying patterns and correlations between traffic metrics and economic performance.
 
+### Deliverables
+* 📓 **Jupyter Notebook:** [View Urban Mobility & Economic Analysis Notebook](./S5%20ladb_mobility_economy_project_student.ipynb)
+
 ### Insights & Key Findings 
 
 #### 1. Economic & Mobility Decoupling
